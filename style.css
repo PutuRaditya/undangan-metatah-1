@@ -1,0 +1,170 @@
+/* Main Style CSS */
+
+:root {
+  --blue: #14213d;
+  --orange: #fca311;
+  --platinum: #e5e5e5;
+  --shadow: #050505;
+}
+
+body {
+  font-family: "Ancizar Serif";
+  font-weight: 500;
+  color: var(--platinum);
+  background-color: var(--blue);
+}
+
+/* Section Hero */
+
+.hero::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  background-image: url(img/mandala-op15.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 600px;
+}
+
+.hero {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  min-height: 100vh;
+  padding: 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.hero .ornamen{
+  position: absolute;
+  z-index: -1;
+  width: 700px;
+
+}
+
+.hero .ornamen-kanan{
+  bottom: -4rem;
+  right: -5rem;
+  transform: rotate(30deg);
+}
+
+.hero .ornamen-kiri{
+  top: -4rem;
+  left: -10rem;
+  transform: rotate(30deg);
+}
+
+.hero h2 {
+  font-family: "Ballet";
+  margin: 1.5rem;
+  font-size: 70px;
+}
+
+.hero h1 {
+  font-size: 60px;
+}
+
+.hero h3 {
+}
+
+.hero p {
+  font-size: 24px;
+}
+
+.hero a {
+  font-size: 24px;
+  color: var(--blue);
+  background-color: var(--platinum);
+  box-shadow: var(--shadow);
+  border-radius: 20px;
+}
+
+.hero a:hover {
+  color: var(--platinum);
+  background-color: var(--blue);
+  border: 1px solid var(--platinum);
+}
+
+/* Section Home */
+.home,
+.time,
+.rsvp {
+  text-align: center;
+  justify-content: center;
+
+}
+
+.home h1{
+  font-size: 60px;
+  padding-top: 5rem;
+  padding-bottom: 3rem;
+  font-style: italic;
+}
+
+.home p{
+  padding-bottom: 0.6rem;
+}
+
+.home h2{
+  font-style: italic;
+  font-size: 40px;
+  padding: 0.5rem;
+}
+
+.home p{
+  font-size: 18px;
+  font-style: italic;
+}
+
+.home .p2{
+  padding-top: 0.7rem;
+}
+
+.home h3{
+  font-style: italic;
+  font-weight: 300;
+  font-size: 24px;
+}
+
+.home .ornamen-home,
+.time .ornamen-time{
+  padding-top: 5rem;
+  width: 500px;
+  justify-content: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Section Time */
+
+
+.time h1.head-time{
+  padding-top: 5rem;
+  padding-bottom: 2rem;
+}
+
+.time h2{
+  font-style: italic;
+  padding-bottom: 0.6rem;
+}
+
+
+/* Section RSVP */
+
+/* Footer */
+
+/* Media Query */
+
+/* Laptop */
+
+/* Tablet */
+
+/* Mobile */
