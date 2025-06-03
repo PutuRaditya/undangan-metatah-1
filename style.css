@@ -14,6 +14,61 @@ body {
   background-color: var(--blue);
 }
 
+body .home,
+body .time,
+body .rsvp {
+  position: relative;
+  z-index: 1;
+  overflow: hidden;
+}
+
+body .home::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  z-index: -1;
+  background-image: url(img/background-ornament-2.png);
+  background-repeat: repeat;
+  background-position: center;
+}
+
+body .home::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  z-index: 0;
+  background: linear-gradient(to bottom, rgba(20, 33, 61, 1) 0%, rgba(20, 33, 61, 0) 40%);
+}
+
+body .time::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  z-index: -1;
+  background-image: url(img/background-ornament-2.png);
+  background-repeat: repeat;
+  background-position: center;
+  opacity: 1;
+}
+
+body .rsvp::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  z-index: -1;
+  background-image: url(img/background-ornament-2.png);
+  background-repeat: repeat;
+  background-position: center;
+}
+
+body .rsvp::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  z-index: 0;
+  background: linear-gradient(to bottom, rgba(20, 33, 61, 0) 60%, rgba(20, 33, 61, 1) 100%);
+}
+
 /* Section Hero */
 
 .hero::before {
@@ -43,20 +98,19 @@ body {
   text-align: center;
 }
 
-.hero .ornamen{
+.hero .ornamen {
   position: absolute;
-  z-index: -1;
+  z-index: 2;
   width: 700px;
-
 }
 
-.hero .ornamen-kanan{
+.hero .ornamen-kanan {
   bottom: -4rem;
   right: -5rem;
   transform: rotate(30deg);
 }
 
-.hero .ornamen-kiri{
+.hero .ornamen-kiri {
   top: -4rem;
   left: -10rem;
   transform: rotate(30deg);
@@ -99,43 +153,42 @@ body {
 .rsvp {
   text-align: center;
   justify-content: center;
-
 }
 
-.home h1{
+.home h1 {
   font-size: 60px;
   padding-top: 5rem;
   padding-bottom: 3rem;
   font-style: italic;
 }
 
-.home p{
+.home p {
   padding-bottom: 0.6rem;
 }
 
-.home h2{
+.home h2 {
   font-style: italic;
   font-size: 40px;
   padding: 0.5rem;
 }
 
-.home p{
+.home p {
   font-size: 18px;
   font-style: italic;
 }
 
-.home .p2{
+.home .p2 {
   padding-top: 0.7rem;
 }
 
-.home h3{
+.home h3 {
   font-style: italic;
   font-weight: 300;
   font-size: 24px;
 }
 
 .home .ornamen-home,
-.time .ornamen-time{
+.time .ornamen-time {
   padding-top: 5rem;
   width: 500px;
   justify-content: center;
@@ -144,22 +197,99 @@ body {
 }
 
 /* Section Time */
+.time {
+  font-style: italic;
+}
 
+.time .col-time {
+  border: 3px solid var(--platinum);
+  border-radius: 30px;
+  border-style: double;
+  justify-content: center;
+  align-items: center;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 2rem;
+  background-color: rgba(224, 224, 248, 0.2);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
 
-.time h1.head-time{
+.time .col-time h2 {
+  font-size: 2.2rem;
+  font-weight: 700;
+}
+
+.time .col-time p {
+  font-size: 1.4rem;
+  line-height: 1.6;
+}
+
+.time .row p {
+  font-size: 1.5rem;
+  /* padding: 1rem; */
+}
+
+.time .row .p-info {
+  padding-top: 1.3rem;
+  padding-left: 6rem;
+  padding-right: 6rem;
+}
+
+.time h1.head-time {
   padding-top: 5rem;
   padding-bottom: 2rem;
 }
 
-.time h2{
+.time h2 {
   font-style: italic;
   padding-bottom: 0.6rem;
 }
 
+.time .row h1 {
+  padding: 1rem;
+}
 
 /* Section RSVP */
 
+.rsvp h1 {
+  padding-top: 2rem;
+}
+
 /* Footer */
+
+footer {
+  padding-top: 1.3rem;
+}
+
+footer p {
+  font-size: 20px;
+}
+
+footer .col {
+  text-align: center;
+}
+
+footer a {
+  text-decoration: none;
+}
+
+footer ul {
+  padding: 0;
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+}
+
+footer li {
+  list-style: none;
+  display: inline;
+  margin: 0.5rem;
+}
+
+footer i {
+  font-size: 2rem;
+  color: var(--platinum);
+}
 
 /* Media Query */
 
